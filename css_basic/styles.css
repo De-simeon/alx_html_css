@@ -35,3 +35,70 @@ header, footer {
   background: #f4f4f4;
   text-align: center;
 }
+
+/* General colors & font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin-right: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 2rem;
+  margin-right: 30px;
+}
+
+/* Article styling */
+article {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Aside styling */
+aside {
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-left: 2px solid #ccc;
+}
+
+/* Footer styling */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
