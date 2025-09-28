@@ -280,7 +280,7 @@ ul li a {
 }
 
 .faq-section{
-  padding: 40px 29% 95px;
+  padding: 40px 20% 95px;
 }
 
 .faq-section h2{
@@ -292,7 +292,7 @@ ul li a {
 
 .faq-wrapper{
   display: flex;
-  gap: 260px;
+  gap: 200px;
 }
 
 .faq-container{
