@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Source Sans 3";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: url("/Img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1024px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+ul li a {
+  color: #fff;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.hero-container h1 {
+  font-size: 120px;
+  line-height: 100px;
+  color: #fff;
+}
+
+.Emotions {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-container button {
+  background-color: #C271FF;
+  color: #fff;
+  box-shadow: 0px 2px 20px #000000;
+  border: none;
+  width: 162px;
+  height: 44px;
+  margin-top: 40px;
+  border-radius: 22px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.hero-container-2 h2 span {
+  color: #C271FF;
+  font-weight: 800;
+}
+
+.hero-container-2 h2 {
+  text-align: center;
+  margin-top: 190px;
+  margin-bottom: 90px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.hero-container-2 .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 139px;
+}
+
+.hero-container-2 .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.profile p {
+  font-weight: 200;
+}
+
+.tutorial-section {
+  background-color: #C271FF;
+  padding: 100px 15%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: #fff;
+}
+
+.tutorial-texts blockquote,
+.tutorial-texts p {
+  font-weight: 400;
+}
+
+.popular-section{
+  padding: 20px 10px 100px;
+}
+
+.popular-section h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  margin: 80px 0;
+}
+
+.popular-section h2 span {
+  color: #C271FF;
+  font-weight: 800;
+}
+
+.popular-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px 20%;
+}
+
+.popular-card {
+  width: 100%;
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.popular-card h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 7px 0 10px;
+  padding: 2px 15px 2px;
+}
+
+.popular-card .Lorem {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 2px 15px 2px;
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 2px 15px 2px;
+}
+
+.card-profile h4 {
+  color: #C271FF;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.star i:nth-child(1),
+.star i:nth-child(2),
+.star i:nth-child(3),
+.star i:nth-child(4) {
+  color: #C271FF;
+}
+
+.footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 15px 2px;
+}
+
+.footer-card p {
+  color: #C271FF;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.membership-section {
+  background-color: #071629;
+  padding: 40px 20% 70px;
+  text-align: center;
+}
+
+.membership-section h2 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  margin: 30px 0 45px;
+}
+
+.membership-section h2 span {
+  color: #C271FF;
+  font-weight: 700;
+}
+
+.member-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.member-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.member-card img {
+  margin-bottom: 25px;
+}
+
+.member-card h3 {
+  line-height: 40px;
+}
+
+.member-card p {
+  line-height: 38px;
+}
+
+.member-btn {
+  background-color: #C271FF;
+  color: #fff;
+  box-shadow: 0px 2px 20px #000000;
+  border: none;
+  width: 162px;
+  height: 44px;
+  margin-top: 40px;
+  border-radius: 22px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.faq-section{
+  padding: 40px 29% 95px;
+}
+
+.faq-section h2{
+  font-size: 60px;
+  font-weight: 200;
+  text-align: center;
+  padding: 15px 0 55px;
+}
+
+.faq-wrapper{
+  display: flex;
+  gap: 260px;
+}
+
+.faq-container{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.faq-container div:nth-child(1){
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+.faq-container div:nth-child(2){
+  margin-bottom: 55px;
+  /* width: 50%; */
+  line-height: 34px;
+}
+
+.faq-container div:nth-child(3){
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+.faq-container div:nth-child(4){
+  /* width: 50%; */
+  line-height: 34px;
+}
+
+footer{
+  background-color: #071629;
+  padding: 80px 20%;
+}
+
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-icons{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+
+footer p{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 35.17%;
+  text-align: center;
+  margin-top: 70px
+}
+
+
