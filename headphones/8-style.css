@@ -7,7 +7,7 @@
   padding: 0%;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -23,7 +23,7 @@ li {
   list-style: none;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -41,20 +41,50 @@ nav {
   padding: 20px 10%;
 }
 
-ul {
+.nav-menu {
   display: flex;
   align-items: center;
   gap: 53px;
 }
 
-ul li a {
+.nav-menu li a {
   color: #fff;
   transition: 0.35s all;
 }
-ul li a:hover{
+
+.nav-menu li a:hover {
   color: #C271FF;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.hamburger span:nth-child(2) {
+  width: 15px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  display: none;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
 
 .hero-container {
   display: flex;
@@ -77,6 +107,7 @@ ul li a:hover{
   font-size: 16px;
   font-weight: 500;
 }
+
 .hero-container p {
   color: #fff;
   margin-top: 150px;
@@ -97,18 +128,20 @@ ul li a:hover{
   font-weight: 300;
   transition: 0.35s all;
 }
-.hero-container button:hover{
+
+.hero-container button:hover {
   background-color: white;
   color: #C271FF;
   border: 1px solid #C271FF;
 }
-.hero-container button:active{
+
+.hero-container button:active {
   transform: scale(0.91);
 }
 
 
 
-.what-section{
+.what-section {
   padding: 20px 10px 100px;
 }
 
@@ -119,10 +152,11 @@ ul li a:hover{
   margin: 30px 0;
 }
 
-.what-section h2  {
+.what-section h2 {
   color: #000000;
   font-weight: 800;
 }
+
 .what-paragraph {
   text-align: center;
   font-size: 16px;
@@ -138,8 +172,9 @@ ul li a:hover{
 
 .what-card {
   width: 100%;
+  margin: 15px 0;
   text-align: center;
-  
+
 }
 
 .what-card h3 {
@@ -168,20 +203,21 @@ ul li a:hover{
   z-index: -5;
 }
 
-.results-section::before{
-content: "";
-width: 100%;
-height: 100%;
-background: rgba(9, 21, 43, 0.5);
-background-attachment: fixed;
-display: block;
-position: absolute;
-top: 0%;
-left: 0%;
-z-index: -10;
+.results-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(9, 21, 43, 0.5);
+  background-attachment: fixed;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -10;
 }
+
 .result-container {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   place-content: center;
   gap: 50px;
@@ -196,11 +232,12 @@ z-index: -10;
 }
 
 
-.result-paragraph{
+.result-paragraph {
   color: #fff;
   text-align: center;
   font-weight: 400;
 }
+
 .result-card {
   color: #fff;
   text-align: center;
@@ -208,11 +245,11 @@ z-index: -10;
   position: relative;
 }
 
-.result-card-text{
-position: absolute;
-top: 50%;
-left: -7%;
-transform: translate(50%, -50%);
+.result-card-text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
 .result-card img {
@@ -226,38 +263,41 @@ transform: translate(50%, -50%);
 
 .result-card p {
   line-height: 38px;
+  font-size: 12px
 }
 
-.contact-section{
+.contact-section {
   padding: 40px 20% 95px;
 }
 
-.contact-section h2{
+.contact-section h2 {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
   padding: 15px 0 55px;
 }
 
-form{
+form {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 30px;
 }
 
-.input-group input{
-width: 250px;
-height: 30px;
-border: none;
-border-bottom: 1px solid #C271FF;
-outline: none;
+.input-group input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #C271FF;
+  outline: none;
 }
-.input-group input::placeholder{
-  font-family:"Source Sans 3";
+
+.input-group input::placeholder {
+  font-family: "Source Sans 3";
   font-weight: 600;
   color: #000000;
 }
+
 form button {
   background-color: #C271FF;
   color: #fff;
@@ -271,34 +311,36 @@ form button {
   font-weight: 300;
   transition: 0.35s all;
 }
-form button:hover{
+
+form button:hover {
   background-color: white;
   color: #C271FF;
   border: 1px solid #C271FF;
 }
-form button:active{
+
+form button:active {
   transform: scale(0.91);
 }
 
-footer{
+footer {
   background-color: #071629;
   padding: 80px 20%;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer-icons{
+.footer-icons {
   display: flex;
   align-items: center;
   gap: 15px;
   color: #fff;
 }
 
-footer p{
+footer p {
   color: #fff;
   font-size: 12px;
   font-weight: 400;
@@ -308,3 +350,152 @@ footer p{
 }
 
 
+/****************************************************
+                     MEDIA QUERY 
+*****************************************************/
+@media(max-width:1024px) {
+  .what-wrapper {
+    padding: 10px 5%;
+  }
+}
+
+
+@media(max-width:991px) {
+  .what-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .result-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .result-card img {
+    width: 200px;
+  }
+}
+
+
+@media(max-width:768px) {
+  header {
+    height: auto;
+    padding: 15px 10px 40px;
+  }
+
+  nav {
+    padding: 20px 5%;
+  }
+
+  .nav-menu {
+    gap: 25px;
+  }
+
+  .nav-menu li a {
+    font-size: 12px;
+  }
+
+  .hero-container h1 {
+    font-size: 80px;
+  }
+
+  .hero-container p {
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  .what-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .result-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .result-card img {
+    width: 150px;
+  }
+
+  .result-card h3 {
+    line-height: 40px;
+    font-size: 28px;
+  }
+
+  .result-card p {
+    line-height: 38px;
+    font-size: 10px
+  }
+}
+
+
+@media(max-width:480px) {
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu li a {
+    text-align: center;
+  }
+
+  .nav-menu.active {
+    left: 0%;
+  }
+
+  .hero-container h1 {
+    margin-top: 45px;
+    font-size: 60px;
+  }
+
+  .hero-container p {
+    margin-top: 50px;
+    width: 80%;
+  }
+
+  .what-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .result-paragraph {
+    font-size: 12px;
+  }
+
+  .result-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    padding: 40px 4%;
+  }
+
+  .footer-container img {
+    width: 110px;
+  }
+
+  .footer-icons i {
+    font-size: 10px;
+  }
+
+}
+
+
+@media(max-width:375px) {
+  .hero-container h1 {
+    font-size: 28px;
+  }
+  .Emotions span{
+    font-size: 11px;
+  }
+  .hero-container p{
+    font-size: 12px;
+  }
+}
